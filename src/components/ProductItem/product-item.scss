@@ -1,0 +1,48 @@
+@import '../../colors';
+
+.product {
+    width: 25rem;
+    // height: 35rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 1rem #333;
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+    .product-link {
+      color: $primary-color;
+      text-decoration: none;
+      .product-details {
+        text-align: center;
+        img {
+          width: 100%;
+          height: 23rem;
+          border-top-left-radius: 1.5rem;
+          border-top-right-radius: 1.5rem;
+          object-fit: cover;
+        }
+        h3 {
+          font-size: 1.6rem;
+          font-weight: bold;
+        }
+        p {
+          padding: 1rem;
+          font-size: 2rem;
+        }
+      }
+    }
+    .add-to-cart-btn {
+      margin: 1rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 1rem;
+      font-size: 2.2rem;
+      cursor: pointer;
+      .basket-icon {
+        padding: 0 1rem;
+        font-size: 2.8rem;
+      }
+    }
+  }
+  .product:hover {
+    box-shadow: 0 0 2rem #333;
+  }
+  

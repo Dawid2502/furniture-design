@@ -1,0 +1,31 @@
+.products-container {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+    min-height: 100vh;
+	.product-list {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 3rem;
+		margin-top: 5rem;
+	}
+}
+
+@media (min-width:576px) {
+	.products-container {
+		.product-list {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+@media (min-width:992px) {
+	.products-container {
+		.product-list {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+}

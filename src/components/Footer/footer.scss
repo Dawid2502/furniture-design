@@ -1,0 +1,25 @@
+@import '../../colors';
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: $primary-color;
+    color: $secondary-color;
+    // margin-top: 5rem;
+    p {
+        padding: 2.5rem 2rem;
+        font-size: 1.6rem;
+    }
+    .social-media {
+        margin: 2rem;
+        .icon-media {
+            padding: 0 1rem;
+            color: $secondary-color;
+            font-size: 2.8rem;
+            text-decoration: none;
+        }
+    }
+}

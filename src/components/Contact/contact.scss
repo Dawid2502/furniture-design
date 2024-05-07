@@ -1,0 +1,106 @@
+.contact-container {
+	.map-box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		margin: 4rem 2rem;
+		.map-google {
+			width: 34rem;
+			height: 28rem;
+		}
+		.address-box {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			margin: 2rem 1rem;
+			width: 100%;
+			font-size: 1.4rem;
+		}
+	}
+	.contact-box {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		margin: 1rem;
+		.department-name {
+			padding: 2rem 1rem;
+			font-size: 2.2rem;
+			text-align: left;
+			text-decoration: underline;
+			text-transform: uppercase;
+		}
+		.contact-specialists {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			flex-wrap: wrap;
+			.contact-specialist-name {
+				margin: 1rem;
+				h3 {
+					padding: 1rem;
+					font-size: 1.4rem;
+				}
+				p {
+					padding: 0.5rem;
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.contact-container {
+		.map-box {
+			flex-direction: row;
+			.map-google {
+				width: 42rem;
+				height: 36rem;
+			}
+			.address-box {
+				flex-direction: column;
+				height: 45rem;
+				width: 30%;
+				margin: 2rem 3rem;
+				font-size: 1.6rem;
+			}
+		}
+		.contact-box {
+			.contact-specialists {
+				.contact-specialist-name {
+					h3 {
+						font-size: 1.6rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.contact-container {
+		margin-bottom: 3rem;
+		.map-box {
+			.map-google {
+				width: 62rem;
+				height: 46rem;
+			}
+		}
+		.contact-box {
+			margin: 2rem;
+			.contact-specialists {
+				.contact-specialist-name {
+					h3 {
+						font-size: 1.8rem;
+					}
+					p {
+						font-size: 1.4rem;
+					}
+				}
+			}
+		}
+	}
+}

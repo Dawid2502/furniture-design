@@ -1,0 +1,128 @@
+@import '../../colors';
+
+.timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .timeline-items {
+        width: 100%;
+        max-width: 68rem;
+        .timeline-item {            
+            display: flex;
+            margin: 1rem 0;
+            .item-info {
+                position: relative;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                width: 23rem;
+                border: 2px solid $primary-color;
+                border-top-right-radius: 2.5rem;
+                border-bottom-right-radius: 2.5rem;
+                p {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 100%;
+                    font-size: 1.2rem;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            .item-date {
+                position: relative;
+                width: 7rem;
+                height: 7rem;
+                background-color: $secondary-color;
+                border-radius: 50%;
+                p {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    font-size: 2.2rem;
+                    font-weight: bold;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+            .item-info {
+                margin-left: 1rem;
+                margin-right: 1rem;
+                border-top-left-radius: 2.5rem;
+                border-bottom-left-radius: 2.5rem;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            .item-date {
+                color: $secondary-color;
+                background-color: #333;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    @import '../../colors';
+
+.timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .timeline-items {
+        width: 100%;
+        max-width: 68rem;
+        .timeline-item {            
+            display: flex;
+            margin: 1rem 0;
+            .item-info {
+                position: relative;
+                margin-right: 1rem;
+                width: 25rem;
+                border: 2px solid $primary-color;
+                border-top-right-radius: 2.5rem;
+                border-bottom-right-radius: 2.5rem;
+                p {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 100%;
+                    font-size: 1.4rem;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            .item-date {
+                position: relative;
+                width: 8rem;
+                height: 8rem;
+                background-color: $secondary-color;
+                border-radius: 50%;
+                p {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    font-size: 2.2rem;
+                    font-weight: bold;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+            .item-info {
+                margin-left: 1rem;
+                margin-right: 0;
+                border-top-left-radius: 2.5rem;
+                border-bottom-left-radius: 2.5rem;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            .item-date {
+                color: $secondary-color;
+                background-color: #333;
+            }
+        }
+    }
+}
+}

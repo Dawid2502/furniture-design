@@ -1,0 +1,130 @@
+.offer-container {
+	margin-top: 10rem;
+
+	.offer-description {
+		.title-box {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			margin: 2rem;
+			background-color: #ddd;
+			border-radius: 1rem;
+			img {
+				margin: 2rem;
+				width: 30rem;
+			}
+			div {
+				h2 {
+					font-size: 2rem;
+					text-transform: uppercase;
+				}
+				p {
+					padding: 2rem;
+					font-size: 1.4rem;
+				}
+			}
+		}
+
+		.offer-box {
+			display: flex;
+			justify-content: space-between;
+			align-items: start;
+			flex-direction: column;
+			margin: 2rem;
+            margin-left: 4rem;
+			.offer-information {
+				text-align: left;
+
+				h2,
+				h3,
+				p,
+				li {
+					padding: 1rem 2rem;
+				}
+				h2 {
+					font-size: 1.8rem;
+				}
+				p {
+					font-size: 1.2rem;
+				}
+				h3 {
+					font-size: 1.4rem;
+				}
+
+				ul {
+					font-size: 1.4rem;
+					list-style: square;
+				}
+			}
+			form {
+                margin-top: 2rem;
+				margin-left: -1rem;
+				width: 100%;
+				background-color: #ddd;
+                border-radius: 1rem;
+				.form-group {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+                    label {
+                        padding: 1rem;
+                        font-size: 1.4rem;
+                    }
+					input, #msg {
+						padding: 1rem;
+						width: 90%;
+					}
+                    #msg {
+                        height: 30rem;
+                    }
+				}
+                button {
+                    margin: 2rem;
+                    padding: 1rem 2rem;
+                    border-radius: 1rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+			}
+		}
+	}
+}
+
+@media (min-width:768px) {
+	.offer-container {
+		.offer-description {
+			.title-box {
+				flex-direction: row;
+				div {
+					width: 50%;
+				}
+			}
+			.offer-box {
+				flex-direction: row;
+				.offer-information {
+					width: 50%;
+					text-align: left;	
+					h2,
+					h3,
+					p,
+					h2 {
+						font-size: 2rem;
+					}
+					p {
+						font-size: 1.4rem;
+					}
+					h3 {
+						font-size: 1.6rem;
+					}
+				}
+				form {
+					margin-top: 2rem;
+					width: 50%;
+				}
+			}
+		}
+	}
+	
+}

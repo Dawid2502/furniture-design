@@ -1,0 +1,101 @@
+.category-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .categories-panel {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 3rem;
+        // width: 100%;
+        max-width: 120rem;
+        margin: 8rem 0;
+        .category {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            transition: transform .5s;
+            cursor: pointer;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            h3 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                color: white;
+                font-size: 2.8rem;
+                font-weight: bold;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+            }
+        }
+        .category::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .7);
+            content: '';
+        }
+        .category:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .category-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .categories-panel {
+            display: grid;
+            grid-template-columns: repeat(3, 22rem);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 3rem;
+            // width: 100%;
+            max-width: 120rem;
+            margin-top: 8rem;
+            .category {
+                position: relative;
+                width: 22rem;
+                height: 17rem;
+                transition: transform .5s;
+                cursor: pointer;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                h3 {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    color: white;
+                    font-size: 2.8rem;
+                    font-weight: bold;
+                    transform: translate(-50%, -50%);
+                    z-index: 1;
+                }
+            }
+            .category::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, .7);
+                content: '';
+            }
+            .category:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
